@@ -83,12 +83,19 @@
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="234"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Synopsis plus details" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="I68-cK-gA0">
-                                                <rect key="frame" x="-160" y="8" width="641" height="218"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="V3a-NC-Bv2">
+                                                <rect key="frame" x="48" y="15" width="214" height="21"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                                <color key="highlightedColor" red="0.0067934782608695121" green="0.0067934782608695121" blue="0.0067934782608695121" alpha="0.70000000000000007" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Synopsis" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="P2N-tw-fbA">
+                                                <rect key="frame" x="48" y="44" width="214" height="182"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="0.77000000000000002" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                         <color key="backgroundColor" red="0.0067934782608695121" green="0.0067934782608695121" blue="0.0067934782608695121" alpha="0.82000000000000006" colorSpace="calibratedRGB"/>
@@ -100,7 +107,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="A9o-Q7-v0T"/>
                     <connections>
-                        <outlet property="pictureView" destination="Qvv-MG-mL5" id="b89-NF-rHM"/>
+                        <outlet property="pictureView" destination="Qvv-MG-mL5" id="JYJ-87-guA"/>
+                        <outlet property="synopsisLabel" destination="P2N-tw-fbA" id="7PP-HQ-4EN"/>
+                        <outlet property="titleLabel" destination="V3a-NC-Bv2" id="GFj-E3-x0u"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cZm-jB-fAH" userLabel="First Responder" sceneMemberID="firstResponder"/>

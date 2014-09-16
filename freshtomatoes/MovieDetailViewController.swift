@@ -10,16 +10,28 @@ import UIKit
 
 class MovieDetailViewController: UIViewController {
 
-    
+    var titleString: String!
+    var synopsisString: String!
+    var pic: UIImage!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var synopsisLabel: UILabel!
     @IBOutlet weak var pictureView: UIImageView!
+
     var movie: [NSDictionary]!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        var url = "http://content7.flixster.com/movie/11/17/95/11179597_org.jpg"
-        pictureView.setImageWithURL(NSURL(string: url))
-        // Do any additional setup after loading the view.
+        //var url = "http://content7.flixster.com/movie/11/17/95/11179597_org.jpg"
+        //pictureView.setImageWithURL(NSURL(string: url))
+        
+        if var x = titleLabel {
+            x.text = titleString
+        }
+        if var y = synopsisLabel {
+            y.text = synopsisString
+        }
+        pictureView.image = pic
     }
 
     override func didReceiveMemoryWarning() {

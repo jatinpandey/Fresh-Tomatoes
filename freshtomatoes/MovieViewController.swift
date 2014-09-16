@@ -94,8 +94,8 @@ class MovieViewController: UIViewController, UITableViewDataSource, UITableViewD
         
         var posters = movie["posters"] as NSDictionary
         var posterUrl = posters["thumbnail"] as String
-        
-        cell.posterImage.setImageWithURL(NSURL(string: posterUrl))
+        var originalUrl = posterUrl.stringByReplacingOccurrencesOfString("tmb", withString: "org", options: NSStringCompareOptions.LiteralSearch, range: nil)
+        cell.posterImage.setImageWithURL(NSURL(string: originalUrl))
         
         return cell
 
@@ -103,7 +103,15 @@ class MovieViewController: UIViewController, UITableViewDataSource, UITableViewD
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
         // Get the new view controller
-        let dest = segue.destinationViewController as MovieDetailViewController
+        let detailViewController = segue.destinationViewController as MovieDetailViewController
+        let cell = sender as MovieCell
+        
+        detailViewController.titleString = cell.titleLabel.text
+        
+        detailViewController.synopsisString = cell.synopsisLabel.text
+        
+        detailViewController.pic = cell.posterImage.image
+        
         
         // Pass the selected object to the new view controller
         

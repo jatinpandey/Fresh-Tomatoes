@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F1B685919C6A9EC0096F819 /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1B685819C6A9EC0096F819 /* MovieDetailViewController.swift */; };
+		8F1B685B19C6B6820096F819 /* DVDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1B685A19C6B6820096F819 /* DVDViewController.swift */; };
 		8F2DC65919BFE50C00F2A33B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2DC65819BFE50C00F2A33B /* AppDelegate.swift */; };
 		8F2DC65E19BFE50C00F2A33B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F2DC65C19BFE50C00F2A33B /* Main.storyboard */; };
 		8F2DC66019BFE50C00F2A33B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F2DC65F19BFE50C00F2A33B /* Images.xcassets */; };
@@ -30,6 +32,8 @@
 		1394055B248047F7A371712A /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		277E48D14AFE4F2A96C32B6B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F0D3BA019C669AF00AA91FA /* freshtomatoes-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "freshtomatoes-Bridging-Header.h"; sourceTree = "<group>"; };
+		8F1B685819C6A9EC0096F819 /* MovieDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
+		8F1B685A19C6B6820096F819 /* DVDViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DVDViewController.swift; sourceTree = "<group>"; };
 		8F2DC65319BFE50C00F2A33B /* freshtomatoes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = freshtomatoes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F2DC65719BFE50C00F2A33B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8F2DC65819BFE50C00F2A33B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -84,11 +88,13 @@
 		8F2DC65519BFE50C00F2A33B /* freshtomatoes */ = {
 			isa = PBXGroup;
 			children = (
-				8F2DC65819BFE50C00F2A33B /* AppDelegate.swift */,
 				8F2DC65C19BFE50C00F2A33B /* Main.storyboard */,
+				8F2DC65819BFE50C00F2A33B /* AppDelegate.swift */,
 				8F37292219C632580048841F /* MovieCell.swift */,
 				8F37292019C6197B0048841F /* MovieViewController.swift */,
+				8F1B685819C6A9EC0096F819 /* MovieDetailViewController.swift */,
 				8F0D3BA019C669AF00AA91FA /* freshtomatoes-Bridging-Header.h */,
+				8F1B685A19C6B6820096F819 /* DVDViewController.swift */,
 				8F2DC65F19BFE50C00F2A33B /* Images.xcassets */,
 				8F2DC65619BFE50C00F2A33B /* Supporting Files */,
 			);
@@ -263,7 +269,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F1B685919C6A9EC0096F819 /* MovieDetailViewController.swift in Sources */,
 				8F2DC65919BFE50C00F2A33B /* AppDelegate.swift in Sources */,
+				8F1B685B19C6B6820096F819 /* DVDViewController.swift in Sources */,
 				8F37292319C632580048841F /* MovieCell.swift in Sources */,
 				8F37292119C6197B0048841F /* MovieViewController.swift in Sources */,
 			);

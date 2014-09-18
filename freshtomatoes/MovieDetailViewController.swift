@@ -10,6 +10,7 @@ import UIKit
 
 class MovieDetailViewController: UIViewController {
 
+    @IBOutlet weak var scroller: UIScrollView!
     var titleString: String!
     var synopsisString: String!
     var pic: UIImage!
@@ -22,15 +23,15 @@ class MovieDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        //var url = "http://content7.flixster.com/movie/11/17/95/11179597_org.jpg"
-        //pictureView.setImageWithURL(NSURL(string: url))
-        
         if var x = titleLabel {
             x.text = titleString
         }
         if var y = synopsisLabel {
             y.text = synopsisString
         }
+
+        synopsisLabel.sizeToFit()
+        scroller.contentSize = CGSizeMake(scroller.frame.size.width, synopsisLabel.frame.size.height + 50)
         pictureView.image = pic
     }
 

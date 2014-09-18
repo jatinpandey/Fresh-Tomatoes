@@ -26,14 +26,14 @@
                                                     <rect key="frame" x="87" y="8" width="204" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="1" green="0.99181835060000001" blue="0.44147110579999999" alpha="0.72999999999999998" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yoh-qE-sgR">
                                                     <rect key="frame" x="87" y="37" width="204" height="66.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="1" green="0.99181835058894163" blue="0.44147110583447857" alpha="0.72999999999999998" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="089-Ip-F2Y">
@@ -42,6 +42,7 @@
                                                 </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         <connections>
                                             <outlet property="posterImage" destination="089-Ip-F2Y" id="NWa-h6-N7c"/>
                                             <outlet property="synopsisLabel" destination="yoh-qE-sgR" id="Kqj-uV-V2n"/>
@@ -98,9 +99,10 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.0067934782608695121" green="0.0067934782608695121" blue="0.0067934782608695121" alpha="0.82000000000000006" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </view>
                                 </subviews>
+                                <color key="backgroundColor" red="0.0067934782609999998" green="0.0067934782609999998" blue="0.0067934782609999998" alpha="0.85999999999999999" colorSpace="calibratedRGB"/>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -108,6 +110,7 @@
                     <navigationItem key="navigationItem" id="A9o-Q7-v0T"/>
                     <connections>
                         <outlet property="pictureView" destination="Qvv-MG-mL5" id="JYJ-87-guA"/>
+                        <outlet property="scroller" destination="XSb-NO-4Lz" id="VdY-Ev-DiK"/>
                         <outlet property="synopsisLabel" destination="P2N-tw-fbA" id="7PP-HQ-4EN"/>
                         <outlet property="titleLabel" destination="V3a-NC-Bv2" id="GFj-E3-x0u"/>
                     </connections>

@@ -63,8 +63,12 @@ class MovieViewController: UIViewController, UITableViewDataSource, UITableViewD
         var request = NSMutableURLRequest(URL: NSURL.URLWithString(url))
         
         NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue.mainQueue(), completionHandler:{ (response, data, error) in
+            if error != nil
+            {
+                MBLMessageBanner.showMessageBannerInViewController(self, title: "Networking Error", subtitle: nil, type: MBLMessageBannerType.Error, atPosition: MBLMessageBannerPosition.Top)
+            }
             var errorValue: NSError? = nil
-            let dictionary = NSJSONSerialization.JSONObjectWithData(data, options: nil, error: &errorValue) as NSDictionary
+            let dictionary = NSJSONSerialization.JSONObjectWithData(data, options: nil, error: nil) as NSDictionary
             self.movies = dictionary["movies"] as [NSDictionary]
             self.tableView.reloadData()
             
